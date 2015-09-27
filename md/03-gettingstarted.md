@@ -37,6 +37,8 @@ Notes: variables spring into existance; no need to declare. dyanamically typed
 ```powershell
 $names = @("Lee", "Kim", "Jamie")
 $names += "Ainsley"
+$names[0]
+# Lee
 
 $numbers = @(0 .. 9)  # array size 10, filled numbers 0-9
 $alphas = "abcdef".ToCharArray() # a..f doesn't work =(
