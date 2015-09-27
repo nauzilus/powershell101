@@ -56,10 +56,10 @@ Notes: e.g. SPAutoInstaller
 
 #### Command Line Interface
 
-![PowerShell Command Line Interface (CLI)](/img/powershell-cli.png)
+![PowerShell Command Line Interface (CLI)](img/powershell-cli.png)
 
 ---
 
 #### Integrated Shell Environment
 
-![PowerShell Integrated Shell Environment (ISE)](/img/powershell-ise.png)
+![PowerShell Integrated Shell Environment (ISE)](img/powershell-ise.png)

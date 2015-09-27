@@ -2,10 +2,11 @@
 
 Daniel Flint / [@nauzilus][twitter]
 
-2015-09-28 / [GitHub][github]
+2015-09-28 / [GitHub] / [Code]
 
 [twitter]: https://twitter.com/nauzilus
-[github]: https://nauzilus.github.io/powershell101
+[github]: https://github.com/nauzilus/powershell101
+[code]: https://github.com/nauzilus/powershell101-code
 
 ---
 

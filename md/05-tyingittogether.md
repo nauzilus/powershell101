@@ -22,7 +22,7 @@
 
 ### Scripts
 
-![Script Execution Error](/img/script-execution-restricted.png)
+![Script Execution Error](img/script-execution-restricted.png)
 
 ---
 

@@ -18,7 +18,7 @@ You now have the most powerful shell of them all...
 
 <div class="fragment">
 
-<div>![Blue Shell from Mario Kart](/img/blueshell.png)</div>
+<div>![Blue Shell from Mario Kart](img/blueshell.png)</div>
 	
 For [Shae](http://www.shaegriffiths.com/)
 	
