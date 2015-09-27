@@ -1,3 +1,19 @@
+### Handy Commands
+
+* Formatters:
+
+	* `Format-Table [-Autosize]`
+
+	* `Format-List`
+
+	* `Out-GridView`
+
+* `Show-Command`
+
+* `Set-StrictMode -Version latest`
+
+---
+
 ## Getting help
 
 * [Get-Help]: rich inbuilt help modules (akin to unix man pages)

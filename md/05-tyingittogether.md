@@ -4,8 +4,6 @@
 
 * Functions
 
-* Handy Commands
-
 ---
 
 ### Scripts
@@ -134,19 +132,3 @@ if (Is-Even 5) {
 }
 # How... odd
 ```
-
----
-
-### Handy Commands
-
-* Formatters:
-
-	* `Format-Table [-Autosize]`
-
-	* `Format-List`
-
-	* `Out-GridView`
-
-* `Show-Command`
-
-* `Set-StrictMode -Version latest`
