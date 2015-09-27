@@ -1,0 +1,42 @@
+.reveal pre {
+	font-size: 0.7em;
+}
+.reveal pre code {
+	padding: auto;
+	overflow: visible;
+	background: initial;
+	max-height: 500px;
+	color: inherit;
+}
+.reveal .slides img {
+	border: 0;
+	background: none;
+}
+.reveal .slides a:hover img {
+	background: none;
+	box-shadow: none;
+}
+.reveal .progress span {
+	background-color: hsl(232, 47%, 42%);
+}
+.reveal section .attribution {
+	margin-top: 1em;
+	font-size: 0.5em;
+	color: slategrey;
+}
+.logo-container {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	transition: 0.1s linear all;
+	z-index: 20;
+}
+.logo-container.dimmed {
+	opacity: 0.1;
+}
+.logo-container:hover {
+	opacity: 1;
+}
+.logo-container img {
+	width: 150px;
+}
