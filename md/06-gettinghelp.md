@@ -1,4 +1,4 @@
-### Handy Commands
+## Handy Commands
 
 * Formatters:
 
