@@ -16,7 +16,7 @@
 
 * `Get-ExecutionPolicy -List`
 
-* `Set-ExecutionPolicy Unrestricted CurrentUser`
+* `Set-ExecutionPolicy RemoteSigned CurrentUser`
 
 ---
 
@@ -64,10 +64,10 @@ function Repeat-String([string]$str, [int]$rpt, [string]$delim) {
 }
 
 Repeat-String Bang "3"
-# Bang, Bang, Bang
+# BangBangBang
 
 Repeat-String Bang "3.8" ", "
-# BangBangBangBang
+# Bang, Bang, Bang, Bang
 ```
 
 ---
@@ -95,7 +95,7 @@ if (Is-Even 5) {
 # Even Steven
 ```
 
-* Go home PowerShell, you're drunk!
+* Go home PowerShell, you're drunk! <!-- .element: class="fragment" -->
 
 ---
 
@@ -149,4 +149,4 @@ if (Is-Even 5) {
 
 * `Show-Command`
 
-* `Set-StrictMode latest`
+* `Set-StrictMode -Version latest`

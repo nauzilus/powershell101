@@ -115,17 +115,17 @@ list | ForEach-Object { do_something } | transformed_list
 list | Where-Object { test_something } | filtered_list
 ```
 
+```powershell
+@(1..10) | ForEach-Object { $_ * 2 }
+# 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+@(1..10) | Where-Object { $_ % 2 }
+# 1, 3, 5, 7, 9
+```
+
 * Script blocks are executed for every input object
 	* Current object referenced as `$_`, e.g.
 
 * `ForEach-Object` _doesn't_ mutate the original list
-
-```powershell
-@(1..10) | Where-Object { $_ % 2 }
-# 1, 3, 5, 7, 9
-@(1..10) | ForEach-Object { $_ * 2 }
-# 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
-```
 
 ---
 
@@ -183,22 +183,25 @@ Get-Content -Raw *.xml | ForEach-Object {
 
 ### Streaming Pipeline
 
-
-```powershell
-$numbers = @(5..1) | %{ Sleep -Milliseconds 500; $_ };
-$numbers | %{ "Got $_" }
-```
-
 Pipeline forced to run to completion; slow
 
 ```powershell
-@(5..1) | %{ Sleep -Milliseconds 500; $_ } | %{ "Got $_" }
+$numbers = @(1..5) | ForEach-Object { Sleep -Milliseconds 500; $_ };
+$numbers | ForEach-Object { "Got $_" }
 ```
 
 Pipeline, objects processed as they arrive
 
 ```powershell
-@(5..1) | %{ Sleep -Milliseconds 500; $_ } | Sort | %{ "Got $_" }
+@(1..5) | ForEach-Object {
+	Sleep -Milliseconds 500; $_
+} | ForEach-Object { "Got $_" }
 ```
 
 Not all cmdlets can take advantage of streaming
+
+```powershell
+@(1..5) | ForEach-Object {
+	Sleep -Milliseconds 500; $_
+} | Sort -Desc | ForEach-Object { "Got $_" }
+```
